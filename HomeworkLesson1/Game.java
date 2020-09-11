@@ -4,16 +4,17 @@ import java.sql.SQLOutput;
 
 public class Game {
 
-    public static void toGuessNumber (int a) {
-        int i = 44;
-        while (a != i) {
-            if (a > i) {
+    public static void toGuessNumber (int myNumber) {
+        int computerNumber = 44;
+
+        while (myNumber != computerNumber) {
+            if (myNumber > computerNumber) {
                 System.out.println("Введенное вами число больше числа, которое загадал компьютер");
-                a -= 12;
+                myNumber -= 12;
             }
             else {
                 System.out.println("Введенное вами число меньше числа, которое загадал компьютер");
-                a += 38;
+                myNumber += 38;
             }
         }
         System.out.println("Вы угадали!");
@@ -22,6 +23,6 @@ public class Game {
 
 
     public static void main(String[] args) {
-        toGuessNumber(10);
+        toGuessNumber(44);
     }
 }

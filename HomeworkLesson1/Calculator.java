@@ -1,6 +1,6 @@
 package HomeworkLesson1;
 
-public class Calculator {
+public class  Calculator {
 
         public static void toCalculate (int a, int b, String s) {
             if (s == "+") {
@@ -29,7 +29,7 @@ public class Calculator {
 
 
         public static void main(String[] args) {
-            toCalculate(3,9 , "^");
+            toCalculate(3,0 , "^");
         }
     }
 
